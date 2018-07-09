@@ -3,8 +3,8 @@ class Hash
     # code goes here
     vals = self.values
     arr = []
-    args.each do |arg|
-      arr << self.key(arg) if vals.include?(arg)
+    self.each do |k, v|
+      arr << k if vals.include?(v)
     end
     arr
   end
